@@ -1,0 +1,217 @@
+/* global rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* end global rules */
+/* start header */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+header .logo {
+    font-size: 1.8em;
+    color: #3a6cf4;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header .nav a{
+    color: #3a6cf4;
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all .3s;
+}
+header .nav a:hover {
+    color: #601cfc;
+}
+/* end header */
+/* start landing */
+.landing {
+    padding: 100px 200px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/landing.jpg);
+    background-attachment: fixed no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.landing .main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.landing .main h2 span {
+    display: inline-block;
+    color: #4e9eff;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.landing .main h3 {
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 10px 0 30px 0;
+}
+.landing .main .main-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #3a6cf4;
+    color: #fff;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1.5em;
+    transition: .3s ease;
+}
+.landing .main .main-btn:hover {
+    background-color: #1e52e1;
+    transform: scale(1.1);
+}
+.landing .main  .social a {
+    color: #FFF;
+    padding-right: 30px;
+    font-size: 1.6em;
+}
+/* end landing */
+/* start services */
+.services {
+    padding: 80px 200px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.box .card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: .3s ease;
+}
+.box .card:hover {
+    transform: scale(1.1);
+}
+.box .card .icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+.box .card .info {
+    text-align: center;
+}
+.box .card .info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+/* end services */
+/* start projects */
+.projects {
+    padding: 80px 200px;
+    background-color: #09093a;
+}
+.projects .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 40px;
+}
+.projects .content .card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    margin: 20px;
+    transition: .3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.projects .content .card:hover {
+    transform: scale(1.1);
+}
+
+.projects .content .card .image img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.projects .content .card:hover .image img {
+    opacity: 0.9;
+}
+.projects .content .card .info {
+    padding: 1em;
+}
+.projects .content .card .info .project-para {
+    font-size: 1em;
+    color: #000;
+}
+.projects .content .card .info .project-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.projects .content .card .info .project-title .more {
+    color: #3a6cf4;
+    transition: .3s ease;
+}
+.projects .content .card .info .project-title .more:hover {
+    color: #601cfc;
+}
+/* end projects */
+/* start contact */
+.contact {
+    padding: 80px 200px;
+}
+.contact .card .icon {
+    font-size: 22px;
+}
+footer {
+    background-color: #000;
+    padding: 30px 20px;
+    color: #fff;
+    font-size: 20px;
+}
+footer p {
+    text-align: center;
+}
+footer span {
+    color: #3a6cf4;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/* end contact */
